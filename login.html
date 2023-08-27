@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
-    <forms> </forms>
+    <header>
+        <div class="logo">
+            <img src="./logo/logo.jpg" alt="Logo" style="max-width: 75px;">
+        </div>
+        <div class="botões">
+            <button id="home"><a href="./index.html">HOME</a></button>
+            <button id="receitas"><a href="./receitas.html">RECEITAS</a></button>
+            <button id="login"><a href="./login.html">LOGIN</a></button>
+        </div>
+
+    </header>
+    <br>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Login</legend>
+            <br>
+            <label>Nome:</label>
+            <input title="Nome" type="text" name="nome" placeholder="Digite seu nome" required><br><br>
+            <label for="email">E-mail:</label>
+            <input title="Email" type="email" name="email" placeholder="Digite seu e-mail" required><br><br>
+
+            <label>Senha:</label>
+            <input title="Senha" type="password" name="senha" placeholder="Digite sua senha." required><br><br>
+        </fieldset>
+        <br>
+        <input type="submit" value="Confirmar">
+    </form>
 </body>
+
 </html>
