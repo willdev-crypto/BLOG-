@@ -5,15 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabores com História</title>
-
-    <link rel="stylesheet" href="./historia.html">
-    <link rel="stylesheet" href="./receitas.html">
-    <link rel="stylesheet" href="./sobre.html">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+    <nav>
         <div class="logo">
             <img src="./logo/LogoProjeto.png" alt="Logo" style="max-width: 175px;">
         </div>
@@ -23,31 +19,108 @@
             <button id="historia"><a href="./historia.html">HISTÓRIAS</a></button>
             <button id="sobre"><a href="./sobre.html">SOBRE</a></button>
 
+            
         </div>
+        
+    </nav>
 
+    <header>
+        <h1>Bem-vindo ao Sabores com História</h1>
+        <p>Explore nossas receitas e mergulhe em histórias cativantes que tornam cada prato especial.</p>
     </header>
 
-    <section>
-        <h1>Destaques:</h1>
-        <ul>
-            <li><img src="./img/polenta-cremosa-02.webp" style="max-width: 75px;"><br><a
-                    href="./receitas/polenta.html">Polenta</a></li>
+
+    <main>
+        <h2>Receitas Disponíveis</h2>
+        <ul class="lista-receitas">
+            <li><a href="./receita-polenta.html">Polenta Cremosa</a></li>
+            <li><a href="./receita-sushi.html">Sushi Delicioso</a></li>
+            <!-- Adicione mais itens para cada receita -->
         </ul>
+    </main>
 
 
+    <section class="search-section">
+        <h2>Encontre sua Receita</h2>
+        <form id="search-form" action="buscar-receita.html" method="GET">
+            <input type="text" id="search-input" name="search" placeholder="Digite o nome da receita">
+            <button type="submit">Buscar</button>
+        </form>
     </section>
-    
+
+    <section class="destaques">
+        <h2>Destaques:</h2>
+        <div class="destaque">
+            <a href="./receitas.html">
+                <img src="./img/polenta-cremosa-02.webp" alt="Polenta" style="max-width: 150px;">
+            </a>
+            <div class="descricao">
+                <h3>Polenta Cremosa</h3>
+                <p>Uma receita tradicional italiana que derrete na boca. Acompanhada de molho de tomate caseiro.</p>
+            </div>
+            <p class="ver-receita"><a href="./receitas.html">Clique na foto para ver a receita</a></p>
+        </div>
+        </div>
+        <div class="destaque">
+            <a href="./receitas.html">
+                <img src="./img/sushi2.jpg" alt="Sushi" style="max-width: 150px;">
+            </a>
+            <div class="descricao">
+                <h3>Sushi Delicioso</h3>
+                <p>Uma seleção de sushis frescos e saborosos que são um verdadeiro deleite para os amantes de comida japonesa.</p>
+            </div>
+            <p class="ver-receita"><a href="./receitas.html">Clique na foto para ver a receita</a></p>
+        </div>
+        </div>
+        <div class="destaque">
+            <a href="./receitas.html">
+                <img src="./img/espagueti1.jpg" alt="Espaguete" style="max-width: 150px;">
+            </a>
+            <div class="descricao">
+                <h3>Espaguete ao Molho Pesto</h3>
+                <p>Um prato clássico italiano com molho pesto fresco e ingredientes de alta qualidade.</p>
+            </div>
+            <p class="ver-receita"><a href="./receitas.html">Clique na foto para ver a receita</a></p>
+        </div>
+        </div>
+        <div class="destaque">
+            <a href="./receitas.html">
+                <img src="./img/estrogonoff2.jpg" alt="Estrogonofe" style="max-width: 150px;">
+            </a>
+            <div class="descricao">
+                <h3>Estrogonofe de Frango</h3>
+                <p>Uma versão irresistível do estrogonofe com pedaços suculentos de frango em um molho cremoso.</p>
+            </div>
+            <p class="ver-receita"><a href="./receitas.html">Clique na foto para ver a receita</a></p>
+        </div>
+        </div>
+        <div class="destaque">
+            <a href="./receitas.html">
+                <img src="./img/feijoada1.jpg" alt="Feijoada" style="max-width: 150px;">
+            </a>
+            <div class="descricao">
+                <h3>Feijoada Brasileira</h3>
+                <p>Um prato icônico da culinária brasileira, repleto de sabores e acompanhamentos deliciosos.</p>
+            </div>
+            <p class="ver-receita"><a href="./receitas.html">Clique na foto para ver a receita</a></p>
+        </div>
+    </section>
+   
+    <!-- ... Repita o mesmo padrão para os outros destaques ... -->
+</section>
+
+    <section class="sobre">
+        <h2>Sobre nós</h2>
+        <p>Somos uma equipe apaixonada por comida e história, unindo essas duas paixões para criar um espaço único onde os sabores contam histórias cativantes. Nosso blog é muito mais do que apenas receitas deliciosas... é um portal para explorar o mundo da culinária de maneira mais profunda e significativa.</p>
+    </section>
 
     <footer>
-
-        <ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Linkedin</li>
-
+        <ul class="redes-sociais">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Linkedin</a></li>
         </ul>
         <p>COMIDAS SIMPLES &copy; 2023</p>
     </footer>
 </body>
-
 </html>
