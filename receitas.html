@@ -4,68 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabores com História - Receitas</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./src/components/receita.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="./logo/LogoProjeto.png" alt="Logo" style="max-width: 175px;">
-        </div>
-        <div class="botões">
-            <button id="home"><a href="./index.html">HOME</a></button>
-            <button id="receitas"><a href="./receitas.html">RECEITAS</a></button>
-            <button id="historia"><a href="./historia.html">HISTÓRIAS</a></button>
-            <button id="sobre"><a href="./sobre.html">SOBRE</a></button>
-            
+        <div style="height: 150px;">
+            <iframe src="header.html" scrolling="no" style="width: 100%;"></iframe>
         </div>
     </header>
+    
+    
 
     <section>
-        <ul class="receitas">
+        <h1 style="text-align: center;">Receitas:</h1>
+        <!--Receitas-->
+        <div class="container"> 
             <!--Polenta-->
-            <li class="receita">
-                <h1><a href="./receitas/polenta.html">Polenta</a></h1>
-                <img src="./img/polenta-cremosa-02.webp"  alt="Polenta Cremosa" style="max-width: 300px;">
-                
-                <h3>CURIOSIDADE:</h3>
-                    <p>Você sabia que ela já existia no Brasil antes da chegada dos imigrantes italianos? Na verdade, o que se fazia por aqui era o angu, um prato preparado à base de água e fubá, geralmente temperado com sal e alho frito – e nós podemos dizer que o nosso angu influenciou a polenta italiana! <a href="./historias/polenta.html"><small>saiba mais...</small></a></p>    
-            </li>
-
+            <c-receita
+            link-src="./receitas/polenta.html"
+            link-content="Polenta Cremosa"
+            bg-imagem="../img/polenta2.jpg"
+            content="A polenta é um prato tradicional italiano feito com farinha de milho."
+            ></c-receita>
             <!--Estrogonofe-->
-            <li class="receita">
-                <h1><a href="./receitas/Estrogonofe.html">Estrogonofe de Frango</a></h1>
-                <img src="./img/estrogonofe.png"  alt="Estrogonofe de Frango" style="max-width: 300px;">
-                <h3>CURIOSIDADE:</h3>
-                    <p>Curiosidade sobre o Estrogonofe <a href="./historias/estrogonofe.html"><small>saiba mais...</small></a></p>
-
-            </li>
-
+            <c-receita
+            link-src="./receitas/estrogonofe.html"
+            link-content="Estrogonofe de Frango"
+            bg-imagem="../img/estrogonoff2.jpg"
+            content="Prato russo que se popularizou no Brasil nos anos 1970 e é amado por muitos."
+            ></c-receita>
             <!--Espaguete-->
-            <li class="receita">
-                <h1><a href="./receitas/espaguete.html">Espaguete</a></h1>
-                <img src="./img/espagueti2.jpg"  alt="Espaguete" style="max-width: 300px;">
-                <h3>CURIOSIDADE:</h3>
-                    <p>Curiosidade sobre o Espaguete <a href="./historias/espaguete.html"><small>saiba mais...</small></a></p>
-
-            </li>
-
+            <c-receita
+            link-src="./receitas/espaguete.html"
+            link-content="Espaguete"
+            bg-imagem="../img/espagueti3.jpg"
+            content="O espaguete é um tipo de macarrão longo e fino, originário da Itália."
+            ></c-receita>
             <!--Feijoada-->
-            <li class="receita">
-                <h1><a href="./receitas/feijoada.html">Feijoada</a></h1>
-                <img src="./img/feijoada3.jpg"  alt="Feijoada" style="max-width: 300px;">
-                <h3>CURIOSIDADE:</h3>
-                    <p>Curiosidade sobre o Feijoada <a href="./historias/feijoada.html"><small>saiba mais...</small></a></p>
-
-            </li>
-
+            <c-receita
+            link-src="./receitas/feijoada.html"
+            link-content="Feijoada"
+            bg-imagem="../img/feijoada3.jpg"
+            content="A feijoada é feita com feijão preto e uma variedade de carnes de porco: orelha, rabo e pé"
+            ></c-receita>
             <!--Sushi-->
-            <li class="receita">
-                <h1><a href="./receitas/sushi.html">Sushi</a></h1>
-                <img src="./img/sushi5.jpg"  alt="Sushi" style="max-width: 300px;">
-                <h3>CURIOSIDADE:</h3>
-                    <p>Curiosidade sobre o Sushi <a href="./historias/sushi.html"><small>saiba mais...</small></a></p>
-
-            </li>
-        </ul>
+            <c-receita
+            link-src="./receitas/sushi.html"
+            link-content="Sushi"
+            bg-imagem="../img/sushi3.jpg"
+            content="Sushi é um dos pratos mais tradicionais da culinária japonesa."
+            ></c-receita>
+            <!--Mais Receitas-->
+            
+            <c-receita
+            link-src="./receitas/polenta.html"
+            link-content="Polenta Cremosa"
+            bg-imagem="../img/polenta2.jpg"
+            content="A polenta é um prato tradicional italiano feito com farinha de milho."
+            ></c-receita>
+            
+        </div>
     </section>
     
     
