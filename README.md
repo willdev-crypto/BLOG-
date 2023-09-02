@@ -2,6 +2,7 @@
 
 
 # SABORES COM HISTÓRIA.
+![logo projeto Proz AWS](https://github.com/willdev-crypto/blog/assets/137120025/6c145f75-07c6-4041-a59e-c9ce92a88cd1)
 
 
 Bem-vindo ao nosso Blog de Receitas com Histórias! Aqui, compartilho uma coleção de receitas deliciosas e histórias pessoais que as acompanham. Este blog é um espaço onde a culinária se encontra com memórias e experiências únicas.
