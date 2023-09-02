@@ -25,15 +25,17 @@ Explore as receitas e histórias por meio das categorias no menu de navegação.
 Use a barra de pesquisa para encontrar pratos específicos ou ingredientes.
 Deixe comentários e compartilhe suas próprias histórias relacionadas às receitas.
 
-## Equipe<!-- Em desenvolvimento -->
-<span align="left">
-<h4>William Oliveira</h4> <img src="" width="30" />
-<h4>William Oliveira</h4> <img src="" width="30" />
-<h4>Klaus Santos</h4> <a href="https://github.com/JKlausSantos"><img src="github.png" width="30" />
-<h4>William Oliveira</h4> <img src="" width="30" />
-<h4>William Oliveira</h4> <img src="" width="30" />
-</span>
-              <!-- Em desenvolvimento -->
+## Equipe
+<!-- Em desenvolvimento -->
+ <spam> 
+  <h3>William Oliveira</h3> <a href="https://github.com/willdev-crypto"> <img src="./img/github_logo.png" width="40" /></a>
+  <h3>Jhonael Rocha</h3> <a href="https://github.com/JhonaelRocha"> <img src="./img/github_logo.png" width="40" /></a>
+  <h3>Klaus Santos</h3> <a href="https://github.com/JKlausSantos"> <img src="./img/github_logo.png" width="40" /></a>
+  <h3>Gabriel Ryan</h3> <a href="https://github.com/SrGabrielRyan"> <img src="./img/github_logo.png" width="40" /></a>
+  <h3>Luiz Gonzaga</h3> <a href="https://github.com/lulavalenca"> <img src="./img/github_logo.png" width="40" /></a>
+  
+   </spam>
+<!-- Em desenvolvimento -->
 
 ## Contato
 
