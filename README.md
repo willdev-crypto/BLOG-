@@ -28,11 +28,14 @@ Deixe comentários e compartilhe suas próprias histórias relacionadas às rece
 ## Equipe
 <!-- Em desenvolvimento -->
  <span> 
-  <h3>William Oliveira</h3> <a href="https://github.com/willdev-crypto"> <img src="./img/github_logo.png" width="40" /></a>
-  <h3>Jhonael Rocha</h3> <a href="https://github.com/JhonaelRocha"> <img src="./img/github_logo.png" width="40" /></a>
-  <h3>Klaus Santos</h3> <a href="https://github.com/JKlausSantos"> <img src="./img/github_logo.png" width="40" /></a>
-  <h3>Gabriel Ryan</h3> <a href="https://github.com/SrGabrielRyan"> <img src="./img/github_logo.png" width="40" /></a>
-  <h3>Luiz Gonzaga</h3> <a href="https://github.com/lulavalenca"> <img src="./img/github_logo.png" width="40" /></a>
+  <h3>William Oliveira</h3> <a href="https://github.com/willdev-crypto"> <img src="./logo/github.png" width="40" /></a>
+                            
+   
+  <h3>Jhonael Rocha</h3> <a href="https://github.com/JhonaelRocha"> <img src="./logo/github.png" width="40" /></a>
+  <h3>Klaus Santos</h3> <a href="https://github.com/JKlausSantos"> <img src="./logo/github.png" width="40" /></a>
+                        <a href="https://www.linkedin.com/in/klaussantos/"> <img src="./logo/linkedin.png" width="40" /></a>
+  <h3>Gabriel Ryan</h3> <a href="https://github.com/SrGabrielRyan"> <img src="./logo/github.png" width="40" /></a>
+  <h3>Luiz Gonzaga</h3> <a href="https://github.com/lulavalenca"> <img src="./logo/github.png" width="40" /></a>
   
    </span>
 <!-- Em desenvolvimento -->
@@ -53,7 +56,7 @@ Espero que você aproveite as receitas e histórias compartilhadas neste blog. B
 ## ROADMAP:
 
 
-# Repositório para armazenar resumos e orientação para Git e Github, HTML, CSS , Java e Banco De Dados. 
+# Repositório para armazenar resumos e orientação para Git e Github, HTML, CSS , Java e Banco De Dados AWS. 
 
 ##  REFERÊNCIAS:
  [PROZ EDUCAÇÃO TALENTO CLOUD PRO](https://pages.prozeducacao.com.br/lp-proz-tecnologia-talento-cloud)
