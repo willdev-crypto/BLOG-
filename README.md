@@ -25,6 +25,15 @@ Explore as receitas e histórias por meio das categorias no menu de navegação.
 Use a barra de pesquisa para encontrar pratos específicos ou ingredientes.
 Deixe comentários e compartilhe suas próprias histórias relacionadas às receitas.
 
+## Equipe<!-- Em desenvolvimento -->
+<span align="left">
+<h4>William Oliveira</h4> <img src="" width="30" />
+<h4>William Oliveira</h4> <img src="" width="30" />
+<h4>Klaus Santos</h4> <a href="https://github.com/JKlausSantos"><img src="github.png" width="30" />
+<h4>William Oliveira</h4> <img src="" width="30" />
+<h4>William Oliveira</h4> <img src="" width="30" />
+</span>
+              <!-- Em desenvolvimento -->
 
 ## Contato
 
