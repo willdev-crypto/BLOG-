@@ -5,36 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabores com História</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-            <img src="./logo/LogoProjeto.png" alt="Logo" style="max-width: 175px;">
-        </div>
-        <div style="text-align:right">
-            <section class="search-section">
-                <form id="search-form" action="buscar-receita.html" method="GET">
-                <input type="text" id="search-input" name="search" placeholder="Digite o nome da receita">
-                <button type="submit">Buscar</button>
-            </form>
-        </section>
-        </div>
-    
-        <div style="text-align:center">
-        <div class="botões">
-            <button id="home"><a href="./index.html">HOME</a></button>
-            <button id="receitas"><a href="./receitas.html">RECEITAS</a></button>
-            <button id="historia"><a href="./historia.html">HISTÓRIAS</a></button>
-            <button id="sobre"><a href="./sobre.html">SOBRE</a></button>
-        </div>
-    </nav>
 
     <header>
+        <div style="height: 150px;">
+            <iframe src="header.html" scrolling="no" style="width: 100%;"></iframe>
+        </div>
+    </header>
+
+    <section>
         <h1>Bem-vindo ao Sabores com História</h1>
         <p>Explore nossas receitas e mergulhe em histórias cativantes que tornam cada prato especial.</p>
-    </header>
+    </section>
 
 
     <main>
@@ -71,7 +56,7 @@
                 <img src="./img/sushi2.jpg" alt="Sushi" style="max-width: 150px;">
             </a>
             <div class="descricao">
-                <h3>Sushi Delicioso</h3>
+                <h3><a href="./receitas/sushi.html">Sushi Delicioso</a></h3>
                 <p>Uma seleção de sushis frescos e saborosos que são um verdadeiro deleite para os amantes de comida japonesa.</p>
             </div>
             <p class="ver-receita"><a href="./receitas.html">Clique na foto para ver a receita</a></p>
@@ -82,7 +67,7 @@
                 <img src="./img/espagueti1.jpg" alt="Espaguete" style="max-width: 150px;">
             </a>
             <div class="descricao">
-                <h3>Espaguete ao Molho Pesto</h3>
+                <h3><a href="./receitas/espaguete.html">Espaguete ao Molho Pesto</a></h3>
                 <p>Um prato clássico italiano com molho pesto fresco e ingredientes de alta qualidade.</p>
             </div>
             <p class="ver-receita"><a href="./receitas/espaguete.html">Clique na foto para ver a receita</a></p>
@@ -104,7 +89,7 @@
                 <img src="./img/feijoada1.jpg" alt="Feijoada" style="max-width: 150px;">
             </a>
             <div class="descricao">
-                <h3>Feijoada Brasileira</h3>
+                <h3><a href="./receitas/feijoada.html"> Feijoada Brasileira</a></h3>
                 <p>Um prato icônico da culinária brasileira, repleto de sabores e acompanhamentos deliciosos.</p>
             </div>
             <p class="ver-receita"><a href="./receitas/feijoada.html">Clique na foto para ver a receita</a></p>
