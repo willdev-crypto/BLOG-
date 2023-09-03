@@ -9,6 +9,29 @@
     <link rel="stylesheet" href="./styles/card_receita.css">
     <script src="./src/components/receita.js" defer></script>
     <script src="./scripts/filtro.js"></script>
+
+    <style>
+        .filtros_receitas {
+            display: flex; 
+            justify-content: center; 
+            gap:15px;
+        }
+
+        .filtro {
+            background-color: white;
+            border-radius: 1rem;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        @media (max-width:540px) {
+            .filtros_receitas{
+                display: block;
+                justify-content: flex-start;
+                gap:0;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -24,9 +47,8 @@
     <section>
         <br>
         <h1 style="text-align: center;">Receitas:</h1>
-        <div class="filtros_receitas" 
-        style="display: flex; justify-content: center; gap:15px;">
-        <style> .filtro { background-color: white; border-radius: 1rem; padding: 5px; margin:5px; }</style>
+        <div class="filtros_receitas">
+
             <button class="filtro" onclick="exibirTodas()">Exibir tudo</button>
             <button class="filtro" onclick="Filtrar('jantar')">Jantar</button>
             <button class="filtro" onclick="Filtrar('almoco')">Almoço</button>
@@ -97,7 +119,7 @@
                     </p>
                 </div>
             </div>
-            
+
             <!--Petit Gateau-->
             <div class="receita cafe sobremesa" style="background-image: url(./img/petit2.jpg);">
                 <div></div>
@@ -105,7 +127,8 @@
                     <span class="titulo"><a href="./receitas/petit.html">Petit Gâteau</a></span>
                     <br>
                     <p>
-                        O Petit Gâteau, que significa “pequeno bolo” em francês, é uma sobremesa clássica que agrada a todos.
+                        O Petit Gâteau, que significa “pequeno bolo” em francês, é uma sobremesa clássica que agrada a
+                        todos.
                     </p>
                 </div>
             </div>
