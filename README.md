@@ -55,7 +55,7 @@ Espero que você aproveite as receitas e histórias compartilhadas neste blog. B
 ## ROADMAP:
 
 
-# Repositório para armazenar resumos e orientação para Git e Github, HTML, CSS , Java e Banco De Dados AWS. 
+# Repositório para armazenar resumos e orientação para Git e Github, HTML, CSS Responsivo , Java e Banco De Dados AWS. 
 
 ##  REFERÊNCIAS:
  [PROZ EDUCAÇÃO TALENTO CLOUD PRO](https://pages.prozeducacao.com.br/lp-proz-tecnologia-talento-cloud)
