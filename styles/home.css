@@ -1,34 +1,14 @@
-/* Logo e Barra de Pesquisa */
-.container_pesquisar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-.container_pesquisar > .logo > img{
+
+/* Menu */
+.container_menu > .logo > img{
     width: 125px;
 }
-.container_pesquisar > .pesquisa > input{
-    width: 500px;
-    height: 30px;
-    border-radius: 10px;
-    background-color:#AE9279;
-    border-color: transparent;
-}
-.container_pesquisar > .pesquisa > input::placeholder{
-    font-size: 20px;
-    padding-left: 40px;
-    color:#645C5C;
-}
-/* Menu */
 .container_menu{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 250px;
+    padding-right: 250px;
     background-color: #AE9279;
 }
 .container_menu > .pc{
@@ -36,7 +16,7 @@
 }
 .container_menu > .pc > a{
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 500;
     color: white;
     font-family: serif;
 }
@@ -97,15 +77,6 @@
 
 /*Responsividade*/
 @media (max-width: 1000px){
-    /*Logo*/
-    .container_pesquisar > .pesquisa > input{
-        width: 300px;
-        height: 30px;
-    }
-    .container_pesquisar > .pesquisa > input::placeholder{
-        font-size: 20px;
-        padding-left: 20px;
-    }
 
     /*Menu*/
     .container_menu{
@@ -128,27 +99,20 @@
 
 
 @media(max-width: 650px){
-    /*Logo*/
-    .container_pesquisar > .pesquisa > input{
-        width: 200px;
-        height: 25px;
-    }
-    .container_pesquisar > .pesquisa > input::placeholder{
-        font-size: 20px;
-        padding-left: 5px;
-    }
 
     /*Menu*/
-    
     .container_menu > .pc{
         display: none;
     }
     /*Mobile*/
     .container_menu{
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .container_menu > .logo{
+        margin-left: 50px;
     }
     .container_menu > .mobile > button{
         display: flex;
@@ -174,15 +138,6 @@
 }
 
 @media(max-width: 500px){
-    /*Logo*/
-    .container_pesquisar > .pesquisa > input{
-        width: 200px;
-        height: 25px;
-    }
-    .container_pesquisar > .pesquisa > input::placeholder{
-        font-size: 15px;
-        padding-left: 5px;
-    }
     /*Capa*/
     .container_capa > .capa > h1{
         font-size: 25px;
@@ -198,15 +153,6 @@
 }
 
 @media(max-width: 400px){
-    /*Logo*/
-    .container_pesquisar > .pesquisa > input{
-        width: 150px;
-        height: 25px;
-    }
-    .container_pesquisar > .pesquisa > input::placeholder{
-        font-size: 10px;
-        padding-left: 5px;
-    }
     /*Capa*/
     .container_capa > .capa > h1{
         font-size: 17px;
