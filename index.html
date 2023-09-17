@@ -7,12 +7,15 @@
     <title>Sabores com História</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/card_receita.css">
     <script src="./src/components/receita.js" defer></script>
     <script src="./scripts/mobile_menu.js" defer></script>
+    <script src="./scripts/receitas.js" defer></script>
+    <script src="./scripts/filtro.js" defer></script>
 </head>
 
 <body>
-    
+
 
     <!--Menu-->
     <header>
@@ -24,7 +27,8 @@
             <div class="pc"><a href="./receitas.html">RECEITAS</a></div>
             <div class="pc"><a href="./historia.html">HISTÓRIAS</a></div>
             <div class="pc"><a href="./sobre.html">SOBRE</a></div>
-            <div class="mobile"><button onclick='mobileMenuShow()'><img class="icon" src="./img/mobile_menu.png" ></button></div>
+            <div class="mobile"><button onclick='mobileMenuShow()'><img class="icon"
+                        src="./img/mobile_menu.png"></button></div>
         </div>
     </header>
 
@@ -42,103 +46,73 @@
     <section class="container_capa">
         <div class="capa">
             <h1 class="capa_titulo">Bem-vindo ao Sabores com História</h1>
-            <p class="capa_conteudo">Explore nossas receitas e mergulhe em histórias cativantes que tornam cada prato especial.</p>
+            <p class="capa_conteudo">Explore nossas receitas e mergulhe em histórias cativantes que tornam cada prato
+                especial.</p>
         </div>
     </section>
-    
-    
 
 
-    <main>
-        <h2>Receitas Disponíveis</h2>
-        <ul class="lista-receitas">
-           
-            <li><a href="./receitas/polenta.html">Polenta Cremosa</a></li>
-            <li><a href="./receitas/Estrogonofe.html">Estrogonofe de Frango</a></li>
-            <li><a href="./receitas/sushi.html">Sushi</a></li>
-            <li><a href="./receitas/feijoada.html">Feijoada</a></li>
-            <li><a href="./receitas/espaguete.html">Espaguete</a></li>
-    
-            <!-- Adicione mais itens para cada receita -->
-        </ul>
-    </main>
 
 
-    
-    <section class="destaques">
-        <h2>Destaques:</h2>
-        <div class="destaque">
-            <a href="./receitas/polenta.html">
-                <img src="./img/polenta-cremosa-02.webp" alt="Polenta" style="max-width: 150px;">
-            </a>
-            <div class="descricao">
-                <h3><a href="./receitas/polenta.html">Polenta Cremosa</a></h3>
-                <p>Uma receita tradicional italiana que derrete na boca. Acompanhada de molho de tomate caseiro.</p>
-            </div>
-            <p class="ver-receita"><a href="./receitas/polenta.html">Clique na foto para ver a receita</a></p>
-        </div>
-        </div>
-        <div class="destaque">
-            <a href="./receitas/sushi.html">
-                <img src="./img/sushi2.jpg" alt="Sushi" style="max-width: 150px;">
-            </a>
-            <div class="descricao">
-                <h3><a href="./receitas/sushi.html">Sushi Delicioso</a></h3>
-                <p>Uma seleção de sushis frescos e saborosos que são um verdadeiro deleite para os amantes de comida japonesa.</p>
-            </div>
-            <p class="ver-receita"><a href="./receitas.html">Clique na foto para ver a receita</a></p>
-        </div>
-        </div>
-        <div class="destaque">
-            <a href="./receitas/espaguete.html">
-                <img src="./img/espagueti1.jpg" alt="Espaguete" style="max-width: 150px;">
-            </a>
-            <div class="descricao">
-                <h3><a href="./receitas/espaguete.html">Espaguete ao Molho Pesto</a></h3>
-                <p>Um prato clássico italiano com molho pesto fresco e ingredientes de alta qualidade.</p>
-            </div>
-            <p class="ver-receita"><a href="./receitas/espaguete.html">Clique na foto para ver a receita</a></p>
-        </div>
-        </div>
-        <div class="destaque">
-            <a href="./receitas/Estrogonofe.html">
-                <img src="./img/estrogonoff2.jpg" alt="Estrogonofe" style="max-width: 150px;">
-            </a>
-            <div class="descricao">
-                <h3><a href="./receitas/Estrogonofe.html">Estrogonofe de Frango</a></h3>
-                <p>Uma versão irresistível do estrogonofe com pedaços suculentos de frango em um molho cremoso.</p>
-            </div>
-            <p class="ver-receita"><a href="./receitas/Estrogonofe.html">Clique na foto para ver a receita</a></p>
-        </div>
-        </div>
-        <div class="destaque">
-            <a href="./receitas/feijoada.html">
-                <img src="./img/feijoada1.jpg" alt="Feijoada" style="max-width: 150px;">
-            </a>
-            <div class="descricao">
-                <h3><a href="./receitas/feijoada.html"> Feijoada Brasileira</a></h3>
-                <p>Um prato icônico da culinária brasileira, repleto de sabores e acompanhamentos deliciosos.</p>
-            </div>
-            <p class="ver-receita"><a href="./receitas/feijoada.html">Clique na foto para ver a receita</a></p>
-        </div>
-    </section>
-   
-    <!-- ... Repita o mesmo padrão para os outros destaques ... -->
-</section>
 
-    <section class="sobre">
+    <h1 style="text-align: center; color: #AE9279; padding-top: 30px;">Receitas Disponíveis</h1>
+    <br>
+    <br>
+    <!--Filtros-->
+    <div class="container_filtro">
+        <div class="filtro_button"><button onclick="showFiltros()"><img src="./img/filtro_icon.png" alt=""></button> Filtros</div>
+        <div class="filtros_receitas">
+            <input type="checkbox" id="jantar" name="jantar" onclick="Filtrar()" checked>
+            <label for="jantar">Jantar</label>
+            <input type="checkbox" id="almoco" name="almoco" onclick="Filtrar()" checked>
+            <label for="almoco">Almoço</label>
+            <input type="checkbox" id="cafe" name="cafe" onclick="Filtrar()" checked>
+            <label for="cafe">Café da Manhã</label>
+            <input type="checkbox" id="sobremesa" name="sobremesa" onclick="Filtrar()" checked>
+            <label for="sobremesa">Sobremesa</label>
+            <input type="checkbox" id="petisco" name="petisco" onclick="Filtrar()" checked>
+            <label for="petisco">Petisco</label>
+        </div>
+    </div>
+    <br>
+
+
+    <hr>
+    <!--Receitas - Utilize o receitas.js para adicionar mais-->
+    <div class="container receitas">
+        <!--Polenta Cremosa-->
+        <div class="receita almoco jantar cafe" style="background-image: url(./img/polenta2.jpg);">
+            <div></div>
+            <div class="receita_bottom">
+                <span class="titulo"><a href="./receitas/polenta.html">Polenta</a></span>
+                <br>
+                <p>
+                    A polenta é um prato tradicional italiano feito com farinha de milho.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="container_sobre">
         <h2>Sobre nós</h2>
+    </div>
+    <br>
+    <footer class="sobre">
         <p>Somos uma equipe apaixonada por comida e história, unindo essas duas paixões para criar um espaço único onde os sabores contam histórias cativantes. Nosso blog é muito mais do que apenas receitas deliciosas... é um portal para explorar o mundo da culinária de maneira mais profunda e significativa.</p>
-    </section>
-
-    <footer>
         <ul class="redes-sociais">
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Instagram</a></li>
             <li><a href="#">Linkedin</a></li>
         </ul>
-        <p>COMIDAS SIMPLES &copy; 2023</p>
-    </footer> 
-    alert(`Bem Vindo(a)´);
+        <p>SABORES COM HISTÓRIA &copy; 2023</p>
+    </footer>
+
+
+    </section>
+
+    
 </body>
+
 </html>
