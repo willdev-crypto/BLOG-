@@ -33,6 +33,7 @@
     display: none;
 }
 .mobile-menu{
+    padding-top: 20px;
     display: none;
 }
 .mobile-menu > ul{
