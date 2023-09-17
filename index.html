@@ -8,13 +8,11 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/home.css">
     <script src="./src/components/receita.js" defer></script>
+    <script src="./scripts/mobile_menu.js" defer></script>
 </head>
 
 <body>
-    <script>
-       
-    </script>
-
+    <!--Logo-->
     <div class="container_pesquisar">
         <div class="logo">
             <img src="./img/LogoProjeto.png">
@@ -24,15 +22,28 @@
         </div>
     </div>
 
+    <!--Menu-->
     <header>
         <div class="container_menu">
             <div class="pc"><a href="./index.html">HOME</a></div>
             <div class="pc"><a href="./receitas.html">RECEITAS</a></div>
             <div class="pc"><a href="./historia.html">HISTÓRIAS</a></div>
             <div class="pc"><a href="./sobre.html">SOBRE</a></div>
-            <div class="mobile"><a href="#"><img src="./img/mobile_menu.png" ></a></div>
+            <div class="mobile"><button onclick='mobileMenuShow()'><img class="icon" src="./img/mobile_menu.png" ></button></div>
         </div>
     </header>
+
+    <!--Menu Mobile-->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./receitas.html">RECEITAS</a></li>
+            <li><a href="./historia.html">HISTÓRIAS</a></li>
+            <li><a href="./sobre.html">SOBRE</a></li>
+        </ul>
+    </div>
+
+
     <section class="container_capa">
         <div class="capa">
             <h1 class="capa_titulo">Bem-vindo ao Sabores com História</h1>

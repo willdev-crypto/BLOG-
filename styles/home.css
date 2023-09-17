@@ -34,16 +34,42 @@
 .container_menu > .pc{
     padding: 40px 0;
 }
-.container_menu > div > a{
+.container_menu > .pc > a{
     text-decoration: none;
     font-weight: 700;
     color: white;
     font-family: serif;
 }
-.container_menu > .mobile > a > img{
+/*Mobile*/
+.container_menu > .mobile > button > img{
     width: 40px;
+   
+}
+.container_menu > .mobile > button{
     display: none;
 }
+.mobile-menu{
+    display: none;
+}
+.mobile-menu > ul{
+    display: flex;
+    text-align: center;
+    padding-bottom: 1rem;
+    flex-direction: column;
+}
+.mobile-menu > ul > li{
+    padding-top: 1.2rem;
+    display: block;
+}
+.mobile-menu > ul > li> a{
+    text-decoration: none;
+    color: #AE9279;
+}
+.open{
+    display: none;
+}
+
+
 /*Capa Inicial*/
 .container_capa > .capa{
     width: 100%;
@@ -113,14 +139,26 @@
     }
 
     /*Menu*/
-    .container_menu > .mobile > a > img{
-        width: 40px;
-        display: flex;
-    }
+    
     .container_menu > .pc{
         display: none;
     }
-
+    /*Mobile*/
+    .container_menu{
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .container_menu > .mobile > button{
+        display: flex;
+        background-color: transparent;
+        border: none;
+        cursor: pointer
+    }
+    .open{
+        display: block;
+    }
     /*Capa*/
     .container_capa > .capa > h1{
         font-size: 30px;
