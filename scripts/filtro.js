@@ -1,17 +1,22 @@
-function Filtrar(value) {
+function Filtrar() {
     let receitas = document.getElementsByClassName("receita");
+    let filtros = document.getElementsByClassName("filtros_receitas")[0].getElementsByTagName("input");
+    
     for (let receita of receitas) {
-        if (receita.classList.contains(value)) {
-            receita.style.display = 'grid';
-        } else {
-            receita.style.display = 'none';
+        receita.style.display = 'none';
+        for (let filtro of filtros) {
+            if (filtro.checked && receita.classList.contains(filtro.name)) {
+                receita.style.display = 'grid';
+            }
         }
     }
 }
 
-function exibirTodas() {
-    let receitas = document.getElementsByClassName("receita");
-    for (let receita of receitas) {
-        receita.style.display = 'grid';
+function showFiltros(){
+    let filtro = document.querySelector(".filtros_receitas");
+    if(filtro.classList.contains("open")){
+        filtro.classList.remove("open");
+    }else{
+        filtro.classList.add("open");
     }
 }

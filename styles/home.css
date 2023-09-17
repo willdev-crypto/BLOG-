@@ -5,11 +5,15 @@
 }
 .container_menu{
     display: flex;
+    height: 120px;
     justify-content: space-around;
     align-items: center;
     padding-left: 250px;
     padding-right: 250px;
-    background-color: #AE9279;
+    background-image: linear-gradient(#a88669,#AE9279);
+    box-shadow: 0px 13px 5px 3px rgba(174,146,121,0.87);
+    -webkit-box-shadow: 0px 13px 5px 3px rgba(174,146,121,0.87);
+    -moz-box-shadow: 0px 13px 5px 3px rgba(174,146,121,0.87);
 }
 .container_menu > .pc{
     padding: 40px 0;
@@ -60,6 +64,9 @@
     background-image: url(../img/home_bg_1.png);
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow: 0px 13px 5px 0px rgba(174,146,121,0.87);
+    -webkit-box-shadow: 0px 13px 5px 0px rgba(174,146,121,0.87);
+    -moz-box-shadow: 0px 13px 5px 0px rgba(174,146,121,0.87);
 }
 .container_capa > .capa > h1{
     color: #AE9279;
@@ -72,16 +79,57 @@
     max-width: 550px;
     text-align: center;
 }
+/*Filtro*/
+.container_filtro{
+    display: flex;
+    margin-left: 2rem;
+    flex-direction: column;
+}
+.container_filtro > .filtro_button > button{
+    border: none;
+    background-color: transparent;
+}
+.container_filtro > .filtro_button > button > img{
+    width: 15px;
+}
+.container_filtro > .filtros_receitas {
+    margin-top: 20px;
+}
 
+/*Sobre*/
+.container_sobre{
+    margin: 1rem 2rem;
+    color:#AE9279;
+}
+.sobre{
+    padding: 1rem 2rem;
+    background-color: #AE9279;
+}
+.sobre ul{
+    margin-top: 10px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+.sobre p{
+    text-align: justify;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
 
 
 /*Responsividade*/
 @media (max-width: 1000px){
 
     /*Menu*/
+    .container_menu > .logo > img{
+        width: 90px;
+    }
     .container_menu{
         padding-left: 100px;
         padding-right: 100px;
+        height: 100px;
     }
 
     /*Capa*/
@@ -104,12 +152,16 @@
     .container_menu > .pc{
         display: none;
     }
+    .container_menu > .logo > img{
+        width: 75px;
+    }
     /*Mobile*/
     .container_menu{
         display: flex;
         justify-content: space-between;
         padding-left: 10px;
         padding-right: 10px;
+        height: 80px;
     }
     .container_menu > .logo{
         margin-left: 50px;
