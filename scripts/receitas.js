@@ -34,6 +34,14 @@ const receitas = [
         link: "./receitas/petit.html",
         classificacao: "sobremesa"
     },
+    {
+        titulo: "Petit Gâteau",
+        descricao: "O Petit Gâteau, que significa “pequeno bolo” em francês, é uma sobremesa clássica que agrada a todos.",
+        img: "./img/petit2.jpg",
+        link: "./receitas/petit.html",
+        classificacao: "sobremesa"
+    },
+
     
   ]
   
