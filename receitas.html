@@ -7,8 +7,12 @@
     <title>Sabores com História - Receitas</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/card_receita.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <script src="./scripts/mobile_menu.js" defer></script>
+
     <script src="./src/components/receita.js" defer></script>
     <script src="./scripts/filtro.js"></script>
+
 
     <style>
         .filtros_receitas {
@@ -35,12 +39,30 @@
 </head>
 
 <body>
+    <!--Menu-->
     <header>
-
-        <div style="height: 150px;">
-            <iframe src="header.html" scrolling="no" style="width: 100%;"></iframe>
+        <div class="container_menu">
+            <div class="logo">
+                <img src="./img/LogoProjeto.png">
+            </div>
+            <div class="pc"><a href="./index.html">HOME</a></div>
+            <div class="pc"><a href="./receitas.html">RECEITAS</a></div>
+            <div class="pc"><a href="./historia.html">HISTÓRIAS</a></div>
+            <div class="pc"><a href="./sobre.html">SOBRE</a></div>
+            <div class="mobile"><button onclick='mobileMenuShow()'><img class="icon"
+                        src="./img/mobile_menu.png"></button></div>
         </div>
     </header>
+
+    <!--Menu Mobile-->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./receitas.html">RECEITAS</a></li>
+            <li><a href="./historia.html">HISTÓRIAS</a></li>
+            <li><a href="./sobre.html">SOBRE</a></li>
+        </ul>
+    </div>
 
 
 

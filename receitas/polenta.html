@@ -5,23 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabores com História - Polenta</title>
+    <link rel="stylesheet" href="../styles/header.css">
+    <script src="../scripts/mobile_menu.js"></script>
 </head>
 
 <body>
+    <!--Menu-->
     <header>
-        <div class="logo">
-            <img src="../logo/LogoProjeto.png" alt="Logo" style="max-width: 175px;">
+        <div class="container_menu">
+            <div class="logo">
+                <img src="../img/LogoProjeto.png">
+            </div>
+            <div class="pc"><a href="../index.html">HOME</a></div>
+            <div class="pc"><a href="../receitas.html">RECEITAS</a></div>
+            <div class="pc"><a href="../historia.html">HISTÓRIAS</a></div>
+            <div class="pc"><a href="../sobre.html">SOBRE</a></div>
+            <div class="mobile"><button onclick='mobileMenuShow()'><img class="icon"
+                        src="../img/mobile_menu.png"></button></div>
         </div>
-        <div style="text-align:center">
-        <div class="botões">
-            <button id="home"><a href="../index.html">HOME</a></button>
-            <button id="receitas"><a href="../receitas.html">RECEITAS</a></button>
-            <button id="historia"><a href="../historia.html">HISTÓRIAS</a></button>
-            <button id="sobre"><a href="../sobre.html">SOBRE</a></button>
-
-        </div>
-
     </header>
+
+    <!--Menu Mobile-->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../receitas.html">RECEITAS</a></li>
+            <li><a href="../historia.html">HISTÓRIAS</a></li>
+            <li><a href="../sobre.html">SOBRE</a></li>
+        </ul>
+    </div>
 
     <section>
         <div class="receita">
