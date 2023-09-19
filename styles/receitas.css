@@ -1,0 +1,179 @@
+
+.container_receitas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container_receita{
+    display: flex;
+    align-items: center;
+}
+
+.container_receita > .receita_imagem{
+    margin: 10px;
+}
+.container_receita > .receita_imagem > img{
+    width: 300px;
+    min-width: 300px;
+    height: 200px;
+    min-height: 200px;
+}
+
+.container_receita > .receita_titulo{
+    width: 300px;
+    min-width: 300px;
+    height: 200px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.container_receita > .receita_titulo > h1 > a{
+    text-decoration: none;
+    color: #AE9279;
+}
+.container_receita > .receita_titulo > p{
+    text-align: justify;
+}
+
+
+
+.container_receita > .receita_bandeira{
+    background-size: cover;
+    background-position-x: right;
+    width: 300px;
+    min-width: 300px;
+    height: 200px;
+    min-height: 200px;
+    margin: 10px;
+}
+
+/*Responsividade*/
+@media (max-width: 1200px){
+    .container_receita > .receita_imagem > img{
+        width: 250px;
+        min-width: 250px;
+        height: 200px;
+        min-height: 200px;
+    }
+    
+    .container_receita > .receita_titulo{
+        width: 250px;
+        min-width: 250px;
+        height: 200px;
+        min-height: 200px;
+    }
+    .container_receita > .receita_bandeira{
+        width: 250px;
+        min-width: 250px;
+        height: 200px;
+        min-height: 200px;
+    }
+}
+@media (max-width: 1000px){
+    .container_receita > .receita_imagem > img{
+        width: 200px;
+        min-width: 200px;
+        height: 175px;
+        min-height: 175px;
+    }
+    
+    .container_receita > .receita_titulo{
+        width: 200px;
+        min-width: 200px;
+        height: 175px;
+        min-height: 175px;
+    }
+    .container_receita > .receita_bandeira{
+        width: 200px;
+        min-width: 200px;
+        height: 175px;
+        min-height: 175px;
+    }
+
+    .container_receita > .receita_titulo > h1 > a{
+        font-size: 20px;
+    }
+    .container_receita > .receita_titulo > p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 670px){
+    .container_receita > .receita_imagem > img{
+        width: 400px;
+        min-width: 400px;
+        height: 300px;
+        min-height: 300px;
+    }
+    
+    .container_receita > .receita_titulo{
+        justify-content: flex-start;
+        width: 400px;
+        min-width: 400px;
+        height: 300px;
+        min-height: 300px;
+    }
+    .container_receita > .receita_bandeira{
+        display: none;
+    }
+    .container_receita{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container_receita > .receita_titulo > h1 > a{
+        font-size: 30px;
+    }
+    .container_receita > .receita_titulo > p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 470px){
+    .container_receita > .receita_imagem > img{
+        width: 275px;
+        min-width: 275px;
+        height: 200px;
+        min-height: 200px;
+    }
+    
+    .container_receita > .receita_titulo{
+        width: 275px;
+        min-width: 275px;
+        height: 200px;
+        min-height: 200px;
+    }
+    .container_receita > .receita_titulo > h1 > a{
+        font-size: 25px;
+    }
+    .container_receita > .receita_titulo > p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 300px){
+    .container_receita > .receita_imagem > img{
+        width: 200px;
+        min-width: 200px;
+        height: 150px;
+        min-height: 150px;
+    }
+    
+    .container_receita > .receita_titulo{
+        width: 200px;
+        min-width: 200px;
+        height: 150px;
+        min-height: 150px;
+    }
+    .container_receita > .receita_titulo > h1 > a{
+        font-size: 18px;
+    }
+    .container_receita > .receita_titulo > p{
+        font-size: 12px;
+    }
+}
