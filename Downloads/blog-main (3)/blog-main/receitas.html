@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores com História - Receitas</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/card_receita.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/receitas.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <script src="./scripts/mobile_menu.js" defer></script>
+
+    <script src="./src/components/receita.js" defer></script>
+    <script src="./scripts/filtro.js"></script>
+    <script src="./scripts/receitas.js" defer></script>
+
+
+</head>
+
+<body>
+    <!--Menu-->
+    <header>
+        <div class="container_menu">
+            <div class="logo">
+                <img src="./img/LogoProjeto.png">
+            </div>
+            <div class="pc"><a href="./index.html">HOME</a></div>
+            <div class="pc"><a href="./receitas.html">RECEITAS</a></div>
+            <div class="pc"><a href="./historia.html">HISTÓRIAS</a></div>
+            <div class="pc"><a href="./sobre.html">SOBRE</a></div>
+            <div class="mobile"><button onclick='mobileMenuShow()'><img class="icon"
+                        src="./img/mobile_menu.png"></button></div>
+        </div>
+    </header>
+
+    <!--Menu Mobile-->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./receitas.html">RECEITAS</a></li>
+            <li><a href="./historia.html">HISTÓRIAS</a></li>
+            <li><a href="./sobre.html">SOBRE</a></li>
+        </ul>
+    </div>
+
+    <!--Capa-->
+    <section class="container_capa">
+        <div class="capa" style="background-image: url('./img/bg_02.jpg');">
+            <h1 class="capa_titulo">Nossas Receitas</h1>
+            <p class="capa_conteudo">Explorando sabores pelo mundo: Receitas para transformar o seu mundo culinário!</p>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="container_receitas">
+            <!--Adicione mais receitas usando o receitas.js-->
+            <div class="container_receita">
+                <div class="receita_imagem"><img src="./img/polenta2.jpg"></div>
+                <div class="receita_titulo">
+                    <h1><a href="./receitas/polenta.html">Polenta</a></h1>
+                    <p>
+                        A polenta tem suas raízes na Roma Antiga, onde os romanos cozinhavam um alimento semelhante feito de farinha de cevada chamado "puls." Este prato era uma importante fonte de nutrição para os soldados romanos.
+                    </p>
+                </div>
+                <div class="receita_bandeira" style="background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('https://static.todamateria.com.br/upload/ba/nd/bandeira-da-italia-og.jpg');"></div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+
+</body>
+
+</html>
