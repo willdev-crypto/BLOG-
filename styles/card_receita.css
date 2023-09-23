@@ -1,6 +1,7 @@
 
 .receita{
-    max-width: 100%;
+    max-width: 90%;
+    min-width: 90%;
     display: grid;
     grid-template-rows: 1fr 1fr;
     border-radius: 1rem;
