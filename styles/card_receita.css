@@ -13,8 +13,10 @@
     height: 250px;
     background-size: cover;
     background-repeat: no-repeat;
-
-    
+    transition: transform .5s;
+  }
+  .receita:hover{
+    transform: scale(1.05);
   }
   .receita .receita_bottom .titulo{
     max-width: calc(100% - 20px);
