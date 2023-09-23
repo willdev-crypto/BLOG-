@@ -34,13 +34,6 @@ const receitas = [
         link: "./receitas/petit.html",
         classificacao: "sobremesa"
     },
-    {
-        titulo: "Petit Gâteau",
-        descricao: "O Petit Gâteau, que significa “pequeno bolo” em francês, é uma sobremesa clássica que agrada a todos.",
-        img: "./img/petit2.jpg",
-        link: "./receitas/petit.html",
-        classificacao: "sobremesa"
-    },
 
     
   ]
@@ -49,15 +42,9 @@ const receitas = [
   for(let i = 0; i < receitas.length; i++){
       main.innerHTML += 
       `
-      <div class="receita ${receitas[i].classificacao}" style="background-image: url(${receitas[i].img});">
-            <div></div>
-            <div class="receita_bottom">
-                <span class="titulo"><a href="${receitas[i].link}">${receitas[i].titulo}</a></span>
-                <br>
-                <p>
-                    ${receitas[i].descricao}
-                </p>
-            </div>
-        </div>
+      <a class="receita_container ${receitas[i].classificacao}" style="background-image: url(${receitas[i].img});" href="${receitas[i].link}">
+            <div class="receita_titulo">${receitas[i].titulo}</div>
+            <div class="receita_texto">${receitas[i].descricao}</div>
+        </a>
       `
   }

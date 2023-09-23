@@ -1,62 +1,59 @@
-
-.receita{
-    max-width: 90%;
-    min-width: 90%;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    border-radius: 1rem;
-    margin: 10px;
-    box-shadow: 6px 6px 7px -1px rgba(0,0,0,0.38);
-    -webkit-box-shadow: 6px 6px 7px -1px rgba(0,0,0,0.38);
-    -moz-box-shadow: 6px 6px 7px -1px rgba(0,0,0,0.38);
-    background-color: lightgrey;
-    height: 250px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: transform .5s;
-  }
-  .receita:hover{
-    transform: scale(1.05);
-  }
-  .receita .receita_bottom .titulo{
-    max-width: calc(100% - 20px);
-    margin: 0 10px; 
-    display: flex;
-    justify-content: center;
-    border-radius: 1rem;
-    text-align: center;
-    color: red;
-    
-  }
-  .titulo a{
-    text-decoration: none;
-    color:chocolate;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 1rem;
-    padding: 5px;
-  }
-
-  .receita .receita_bottom p{
-    max-width: calc(100% - 20px);
-    margin: 0 10px 10px; 
-    display:flex;
-    justify-content:center;
-    border-radius:1rem;
-    text-align:center;
-    color:blue;
-    background-color: rgba(255, 255, 255, 0.6);
-    padding: 5px;
-  }
-
-
-
-
   /*Container das receitas*/
-.container{
+  .container{
     display: grid; grid-template-columns: 1fr; gap: 25px;
     max-width: 100%;
     margin: 10px 0px 0;
 }
+
+
+/*Receitas*/
+
+
+.receita_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    text-decoration: none;
+    border-radius: 15px;
+    width: 90%;
+    min-width: 90%;
+    box-shadow: 6px 6px 7px -1px rgba(0,0,0,0.38);
+    -webkit-box-shadow: 6px 6px 7px -1px rgba(0,0,0,0.38);
+    -moz-box-shadow: 6px 6px 7px -1px rgba(0,0,0,0.38);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    transition: transform .5s;
+}
+.receita_container:hover{
+    transform: scale(1.1);
+}
+.receita_container > .receita_titulo{
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #D1691E;
+}
+.receita_container > .receita_texto{
+    text-align: center;
+    margin: 10px;  
+    padding: 5px;
+    border-radius: 10px; 
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #0000FF;
+}
+
+
+
+
+
+
+ 
 
 .receitas-animadas{
     animation: ReceitasFade-In 1s ease forwards;
