@@ -1,14 +1,12 @@
 function Filtrar() {
-    let receitas = document.querySelectorAll(".receita");
+    let receitas = document.querySelectorAll(".receita_container");
     let filtros = document.querySelectorAll(".filtros_receitas input:checked");
 
     for (let receita of receitas) {
-        receita.classList.remove("receitas-animadas"); // Remove a classe de animação
         receita.style.display = 'none';
         for (let filtro of filtros) {
             if (receita.classList.contains(filtro.name)) {
-                receita.style.display = 'grid';
-                receita.classList.add("receitas-animadas"); // Adiciona a classe de animação
+                receita.style.display = 'flex';
             }
         }
     }
@@ -22,3 +20,4 @@ function showFiltros() {
         filtro.classList.add("open");
     }
 }
+
