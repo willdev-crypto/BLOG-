@@ -105,3 +105,25 @@
         display: block;
     }
 }
+/*Extras*/
+/* Isso afeta toda a barra de rolagem */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: #ac8e7450; 
+    border-radius: 10px;
+}
+ 
+/* Cor da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background: #AC8E74;
+    border-radius: 10px;
+}
+
+/* Cor da barra de rolagem ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: #ca9d76; 
+}

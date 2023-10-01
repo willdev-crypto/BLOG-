@@ -44,13 +44,15 @@ body{
 }
 
 
+
+
 /*Responsividade*/
 @media (max-width: 500px){
     .container > .receita > .titulo{
         font-size: 30px;
     }
     .container > .receita{
-        width: 50%;
+        width: 60%;
         height: 100%;
         padding-left: 10px;
         overflow: auto;
@@ -65,7 +67,7 @@ body{
         font-size: 24px;
     }
     .container > .receita{
-        width: 60%;
+        width: 70%;
         height: 100%;
         padding-left: 10px;
         overflow: auto;
@@ -74,4 +76,26 @@ body{
     .container > .receita > .preparo{
         margin: 10px 0 20px 10px;
     }
+}
+
+
+
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #ffffff;
+    width: 10px;
+    height: 10px;
+}
+
+input[type="checkbox"]:checked {
+    background: #ca9d76;
+}
+input[type="checkbox"]:checked:after {
+    content: '✔';
+    font-size: 12px;
+    color: rgb(119, 93, 69);
+    text-align: center;
 }
