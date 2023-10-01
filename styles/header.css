@@ -47,6 +47,7 @@
     text-align: center;
     padding-bottom: 1rem;
     flex-direction: column;
+    background-color: white;
 }
 .mobile-menu > ul > li{
     padding-top: 1.2rem;
