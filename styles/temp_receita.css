@@ -48,6 +48,9 @@ body{
 
 /*Responsividade*/
 @media (max-width: 500px){
+    .container{
+        margin: 30px 5px 15px 5px;
+    }
     .container > .receita > .titulo{
         font-size: 30px;
     }
