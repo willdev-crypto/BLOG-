@@ -43,6 +43,7 @@
 .mobile-menu{
     padding-top: 20px;
     display: none;
+    margin-top: -10px;
 }
 .mobile-menu > ul{
     display: flex;
