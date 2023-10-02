@@ -159,16 +159,16 @@ let main = document.querySelector(".container_receitas");
 
     main.innerHTML += 
     `
-    <div class="container_receita">
-    <div class="receita_imagem"><img src="${receita.img}"></div>
-    <div class="receita_titulo">
-        <h1><a href="${url}">${receita.titulo}</a></h1>
-        <p>
-            ${receita.descricao}
-        </p>
+    <div class="container_receita ${receita.classificacao}">
+        <div class="receita_imagem"><img src="${receita.img}"></div>
+            <div class="receita_titulo">
+            <h1><a href="${url}">${receita.titulo}</a></h1>
+            <p>
+                ${receita.descricao}
+            </p>
+        </div>
+        <div class="receita_bandeira" style="background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('${receita.imagem_bandeira}');"></div>
     </div>
-    <div class="receita_bandeira" style="background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('${receita.imagem_bandeira}');"></div>
-</div>
 
     `
 }

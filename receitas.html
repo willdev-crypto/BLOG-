@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="./styles/home.css">
     <script src="./scripts/mobile_menu.js" defer></script>
 
-    <script src="./src/components/receita.js" defer></script>
-    <script src="./scripts/filtro.js"></script>
+    
     <script src="./scripts/receitas.js" defer></script>
+    <script src="./scripts/filtro.js" defer></script>
 
 
 </head>
@@ -55,6 +55,30 @@
 
     <section>
 
+        <!--Filtros-->
+        <br>
+        <br>
+        <div class="container_filtro">
+            <div class="filtro_button"><button onclick="showFiltros()"><img src="./img/filtro_icon.png" alt=""></button>
+                Filtros</div>
+            <div class="filtros_receitas">
+                <input type="checkbox" id="jantar" name="jantar" onclick="FiltrarReceita()" checked>
+                <label for="jantar">Jantar</label>
+                <input type="checkbox" id="almoco" name="almoco" onclick="FiltrarReceita()" checked>
+                <label for="almoco">Almoço</label>
+                <input type="checkbox" id="cafe" name="cafe" onclick="FiltrarReceita()" checked>
+                <label for="cafe">Café da Manhã</label>
+                <input type="checkbox" id="sobremesa" name="sobremesa" onclick="FiltrarReceita()" checked>
+                <label for="sobremesa">Sobremesa</label>
+                <input type="checkbox" id="petisco" name="petisco" onclick="FiltrarReceita()" checked>
+                <label for="petisco">Petisco</label>
+            </div>
+        </div>
+        <br>
+
+        <hr>
+        <br>
+        <br>
         <div class="container_receitas">
             <!--Adicione mais receitas usando o receitas.js-->
             <!-- <div class="container_receita">
@@ -67,12 +91,12 @@
                 </div>
                 <div class="receita_bandeira" style="background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('https://static.todamateria.com.br/upload/ba/nd/bandeira-da-italia-og.jpg');"></div>
             </div> -->
-            
-            
+
+
         </div>
     </section>
 
-
+    <br>
 </body>
 
 </html>

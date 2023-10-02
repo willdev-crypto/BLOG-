@@ -1,5 +1,18 @@
 function Filtrar() {
-    let receitas = document.querySelectorAll(".receita_container");
+    let receitas = document.querySelectorAll(".receita_container") || document.querySelectorAll(".container_receita");
+    let filtros = document.querySelectorAll(".filtros_receitas input:checked");
+
+    for (let receita of receitas) {
+        receita.style.display = 'none';
+        for (let filtro of filtros) {
+            if (receita.classList.contains(filtro.name)) {
+                receita.style.display = 'flex';
+            }
+        }
+    }
+}
+function FiltrarReceita() {
+    let receitas = document.querySelectorAll(".container_receita");
     let filtros = document.querySelectorAll(".filtros_receitas input:checked");
 
     for (let receita of receitas) {
