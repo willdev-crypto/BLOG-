@@ -1,0 +1,96 @@
+body{
+    background-color: #ffffff;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container_historias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10px;
+    padding: 0 200px;
+    gap: 30px;
+}
+.container_historias > .historia{
+    background: rgb(214,184,158);
+    background: linear-gradient(45deg, rgba(214,184,158,1) 0%, rgba(255,255,255,1) 25%, rgba(255,220,189,1) 50%, rgba(255,255,255,1) 75%, rgba(214,184,158,1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.container_historias > .historia > .titulo_imagem{
+    margin: 0 10px;
+    width: 250px;
+    min-width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.container_historias > .historia > .titulo_imagem > img{
+    min-width: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.container_historias > .historia > .conteudo{
+    margin: 20px 10px 0;
+    padding: 0 10px;
+    height: 200px;
+    width: 100%;
+    overflow: auto;
+}
+.container_historias > .historia > .conteudo > p{
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/*Responsividade*/
+@media (max-width: 900px){
+    .container_historias > .historia > .titulo_imagem{
+        width: 150px;
+        min-width: 150px;
+    }
+    .container_historias > .historia > .conteudo{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 760px){
+    .container_historias{
+        padding: 0;
+    }
+    .container_historias > .historia{
+        flex-direction: column;
+    }
+    .container_historias > .historia > .titulo_imagem > h1{
+        width: 100%;
+        text-align: center;
+    }
+    .container_historias > .historia > .conteudo > h3{
+        text-align: center;
+        width: 100%;
+    }
+    .container_historias > .historia > .titulo_imagem{
+        width: 300px;
+    }
+    .container_historias > .historia > .conteudo{
+        margin: auto 10px;
+    }
+}
+@media (max-width: 330px){
+    .container_historias > .historia > .titulo_imagem{
+        width: 200px;
+    }
+}
+
+/*Animações*/
+.container_historias > .historia:hover{
+    transform: translateY(-3px);
+    background: rgb(255,165,87);
+    background: linear-gradient(45deg, rgba(255,165,87,1) 0%, rgba(255,255,255,1) 25%, rgba(255,183,119,1) 50%, rgba(255,255,255,1) 75%, rgba(255,165,87,1) 100%);
+    cursor: pointer;
+}
+ 

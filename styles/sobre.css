@@ -1,0 +1,83 @@
+
+
+/* Estilos gerais */
+body {
+    background-color: #1d1d1d;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    color: #AE9279;
+    margin: 20px;
+}
+
+p {
+    font-size: 20px;
+    margin: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 50px 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os elementos de lista */
+li {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+li:hover {
+    transform: translateY(-3px);
+}
+
+/*Responsividade*/
+@media (max-width: 650px){
+    h1 {
+        font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+}

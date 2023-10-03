@@ -69,6 +69,10 @@
     display: flex;
     justify-content: flex-end;
 }
+.sobre ul li a {
+    text-decoration: none;
+    color: white;
+}
 
 
 /*Responsividade*/
