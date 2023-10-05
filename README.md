@@ -32,7 +32,7 @@ Deixe comentários e compartilhe suas próprias histórias relacionadas às rece
                             
    
   <h3>Jhonael Rocha</h3> <a href="https://github.com/JhonaelRocha"> <img src="./logo/github.png" width="40" /></a>
-  <h3>Klaus Santos</h3> <a href="https://github.com/JKlausSantos"> <img src="./logo/github.png" width="40" /></a>
+  
   <h3>Gabriel Ryan</h3> <a href="https://github.com/SrGabrielRyan"> <img src="./logo/github.png" width="40" /></a>
   <h3>Luiz Gonzaga</h3> <a href="https://github.com/lulavalenca"> <img src="./logo/github.png" width="40" /></a>
   
