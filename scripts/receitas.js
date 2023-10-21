@@ -168,7 +168,8 @@ let main = document.querySelector(".container_receitas");
             </p>
         </div>
         <div class="receita_bandeira" style="background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('${receita.imagem_bandeira}');"></div>
-    </div>
+    
+        </div>
 
     `
 }
