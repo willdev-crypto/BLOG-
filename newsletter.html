@@ -43,11 +43,12 @@
             <br>
             <label for="nome">Nome:</label>
             <input title="Nome" type="text" name="nome" placeholder="Digite seu nome" required><br><br>
+
             <label for="email">E-mail:</label>
-            <input title="Email" type="email" name="email" placeholder="Digite seu e-mail" required><br><br>
+            <input title="Email" type="email" name="email" placeholder="Digite seu e-mail" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"><br><br>
 
             <label for="senha">Senha:</label>
-            <input title="Senha" type="password" name="senha" placeholder="Digite sua senha." required><br><br>
+            <input title="Senha" type="password" name="senha" placeholder="Digite sua senha." required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$"><br><br>
         </fieldset>
         <br>
         <input class="submit_button" type="submit" value="Confirmar">
