@@ -53,6 +53,26 @@
         <br>
         <input class="submit_button" type="submit" value="Confirmar">
     </form>
+    <br>
+    <form action="/submit-receita" method="post">
+        <fieldset class="container_receita">
+            <legend>Adicionar Nova Receita</legend>
+            <br>
+    
+            <label for="nome_receita">Nome da Receita:</label>
+            <input type="text" id="nome_receita" name="nome_receita" required><br><br>
+    
+            <label for="ingredientes">Ingredientes:</label>
+            <textarea id="ingredientes" name="ingredientes" rows="4" required></textarea><br><br>
+    
+            <label for="instrucoes">Instruções:</label>
+            <textarea id="instrucoes" name="instrucoes" rows="4" required></textarea><br><br>
+        </fieldset>
+        <br>
+    
+        <input class="submit_button" type="submit" value="Adicionar">
+    </form>
+    
 </body>
 
 </html>

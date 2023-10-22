@@ -50,3 +50,18 @@ input[type="submit"]{
 .container_newsletter > input:focus{
     background-color: #fff5eb;
 }
+
+
+body {
+    text-align: center; 
+}
+
+.container_receita {
+    max-width: 400px; 
+    margin: 0 auto; 
+    text-align: left; 
+}
+
+.submit_button {
+    margin: 0 auto; 
+}
