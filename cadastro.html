@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores com História - Cadastro</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/cadastro.css">
+
+    <script src="./scripts/mobile_menu.js" defer></script>
+    <script src="./scripts/cadastro.js" defer></script>
+</head>
+<body>
+    <!--Menu-->
+    <header>
+        <div class="container_menu">
+            <div class="logo">
+                <img src="./img/LogoProjeto.png">
+            </div>
+            <div class="pc"><a href="./index.html">RECEITAS</a></div>
+            <div class="pc"><a href="./historia.html">HISTÓRIAS</a></div>
+            <div class="pc"><a href="./cadastro.html">CADASTRE-SE</a></div>
+            <div class="pc"><a href="./sobre.html">SOBRE</a></div>
+            <div class="mobile"><button onclick='mobileMenuShow()'><img class="icon"
+                        src="./img/mobile_menu.png"></button></div>
+        </div>
+    </header>
+
+    <!--Menu Mobile-->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="./index.html">RECEITAS</a></li>
+            <li><a href="./historia.html">HISTÓRIAS</a></li>
+            <li><a href="./cadastro.html">CADASTRE-SE</a></li>
+            <li><a href="./sobre.html">SOBRE</a></li>
+        </ul>
+    </div>
+
+    <!--Formulário-->
+    <form action="/submit" method="post">
+        <fieldset class="container_newsletter">
+            <legend>Cadastro</legend>
+            <br>
+            <label for="usuario">Usuário:</label>
+            <input title="Usuário" type="text" name="usuario" placeholder="Digite seu nome de Usuário" required onclick="validarUsuario()" oninput="validarUsuario()" onblur="ocultarValidadoresUsuario()">
+
+            <ul class="requisitos_usuario">
+                <li class="requisito_usuario">- Usuário Válido</li>
+            </ul>
+
+            <label for="email">E-mail:</label>
+            <input title="Email" type="email" name="email" placeholder="Digite seu e-mail" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+
+            <label for="senha">Senha:</label>
+            <input title="Senha" type="password" name="senha" placeholder="Digite sua senha." required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" onclick="validarSenha()" oninput="validarSenha()" onblur="ocultarValidadoresSenha()">
+
+            <ul class="requisitos_senha">
+                <li class="requisito especial">- Caracter Especial</li>
+                <li class="requisito maiusculo">- Maiúsculo</li>
+                <li class="requisito minusculo">- Minúsculo</li>
+                <li class="requisito numero">- Número</li>
+                <li class="requisito num_digitos">- 8 digitos</li>
+            </ul>
+
+            <label for="confirmar_senha">Confirme sua senha:</label>
+            <input title="Confirmar senha" type="password" name="confirmar_senha" placeholder="Confirme sua senha" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" onclick="confirmarSenha()" oninput="confirmarSenha()"
+            onblur="ocultarValidadoresConfirmarSenha()">
+
+            <ul class="requisitos_confirmar_senha">
+                <li class="requisito_confirmar_senha">- As senhas devem ser iguais</li>
+            </ul>
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        <input class="submit_button" type="submit" value="Confirmar">
+    </form>
+
+</body>
+</html>
