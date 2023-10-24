@@ -71,10 +71,10 @@ function validarSenha(){
     
     //Caracteres Especiais
     if (caracteresEspeciais.some(caracter => senhaInput.value.includes(caracter))) {
-        charEspecial.innerText = "✔ Caracter Especial";
+        charEspecial.innerText = "✔ Caractere Especial";
         charEspecial.style.color = "#8fff97";
     } else {
-        charEspecial.innerText = "- Caracter Especial";
+        charEspecial.innerText = "- Caractere Especial";
         charEspecial.style.color = "#fd6e6e";
     }
 
