@@ -43,17 +43,21 @@
             <legend>Cadastro</legend>
             <br>
             <label for="usuario">Usuário:</label>
-            <input title="Usuário" type="text" name="usuario" placeholder="Digite seu nome de Usuário" required onclick="validarUsuario()" oninput="validarUsuario()" onblur="ocultarValidadoresUsuario()">
+            <input title="Usuário" type="text" name="usuario" placeholder="Digite seu nome de Usuário" required onfocus="validarUsuario()" oninput="validarUsuario()" onblur="ocultarValidadoresUsuario()">
 
             <ul class="requisitos_usuario">
                 <li class="requisito_usuario">- Usuário Válido</li>
             </ul>
 
             <label for="email">E-mail:</label>
-            <input title="Email" type="email" name="email" placeholder="Digite seu e-mail" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+            <input title="Email" type="email" name="email" placeholder="Digite seu e-mail" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" onfocus="validarEmail()" oninput="validarEmail()" onblur="ocultarValidadoresEmail()">
+
+            <ul class="requisitos_email">
+                <li class="requisito_email">- Email Válido</li>
+            </ul>
 
             <label for="senha">Senha:</label>
-            <input title="Senha" type="password" name="senha" placeholder="Digite sua senha." required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" onclick="validarSenha()" oninput="validarSenha()" onblur="ocultarValidadoresSenha()">
+            <input title="Senha" type="password" name="senha" placeholder="Digite sua senha." required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" onfocus="validarSenha()" oninput="validarSenha()" onblur="ocultarValidadoresSenha()">
 
             <ul class="requisitos_senha">
                 <li class="requisito especial">- Caracter Especial</li>
@@ -64,7 +68,7 @@
             </ul>
 
             <label for="confirmar_senha">Confirme sua senha:</label>
-            <input title="Confirmar senha" type="password" name="confirmar_senha" placeholder="Confirme sua senha" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" onclick="confirmarSenha()" oninput="confirmarSenha()"
+            <input title="Confirmar senha" type="password" name="confirmar_senha" placeholder="Confirme sua senha" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" onfocus="confirmarSenha()" oninput="confirmarSenha()"
             onblur="ocultarValidadoresConfirmarSenha()">
 
             <ul class="requisitos_confirmar_senha">

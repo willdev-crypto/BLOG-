@@ -78,6 +78,15 @@ input[type="submit"]{
     display: none;
 } 
 
+.requisitos_email{
+    width: calc(100% - 40px);
+}
+
+.requisitos_email > .requisito_email{
+    list-style: none;
+    display: none;
+} 
+
 ul > li{
     font-family: monospace;
 }
