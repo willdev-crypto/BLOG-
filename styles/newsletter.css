@@ -1,6 +1,6 @@
 body{
     background: rgb(214,184,158);
-    background: linear-gradient(90deg, rgba(214,184,158,1) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 90%, rgba(214,184,158,1) 100%);
+    background: linear-gradient(90deg, rgba(214,184,158,1) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255) 90%, rgba(214,184,158,1) 100%);
 }
 form{
     margin-top: 50px;

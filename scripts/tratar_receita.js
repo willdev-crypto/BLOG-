@@ -30,7 +30,7 @@ container.innerHTML =
 
     </ol>
     </div>
-    <div class="imagem" style="background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(0, 0, 0)), url('.${img}');">
+    <div class="imagem" style="background-image: linear-gradient(to left, #1D1D1D00, #1D1D1D), url('.${img}');">
         
     </div>
 `
