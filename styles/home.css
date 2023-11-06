@@ -3,7 +3,9 @@
 .open{
     display: none;
 }
-
+body{
+    background-color: #1d1d1d;
+}
 
 /*Capa Inicial*/
 .container_capa > .capa{
@@ -35,6 +37,7 @@
     display: flex;
     margin-left: 2rem;
     flex-direction: column;
+    color: #ffffff;
 }
 .container_filtro > .filtro_button > button{
     border: none;
