@@ -1,3 +1,4 @@
+//Array de Objetos de Receitas
 const receitas = [
     {
         titulo: "Polenta",
@@ -144,13 +145,16 @@ const receitas = [
         ]
     },
 ];
-
 let main = document.querySelector(".receitas");
+
+//Percorrendo o Array para pegar e atribuir os valores
 for (let i = 0; i < receitas.length; i++) {
     const receita = receitas[i];
 
+    //Passando para os hrefs uma queryString ( que guarda os valores da Array ).
     const url = `./receitas/temp.html?titulo=${encodeURIComponent(receita.titulo)}&ingredientes=${encodeURIComponent(JSON.stringify(receita.ingredientes))}&preparo=${encodeURIComponent(JSON.stringify(receita.preparo))}&img=${encodeURIComponent(receita.img)}`;
 
+    //Populando as receitas na página index.html
     main.innerHTML +=
         `
         <a class="receita_container ${receita.classificacao}" style="background-image: url(${receita.img});" href="${url}">
