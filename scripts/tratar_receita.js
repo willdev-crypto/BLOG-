@@ -1,11 +1,14 @@
-
+//Pegando a queryString dada pelo href da receita
+//Ver : home_receitas.js
 const queryString = window.location.search;
 
+//Tratando os valores da queryString
 function obterParametroValor(nomeDoParametro) {
     const parametros = new URLSearchParams(queryString);
     return parametros.get(nomeDoParametro);
 }
 
+//Guardando os valores em variáveis
 const titulo = obterParametroValor('titulo');
 const ingredientes = JSON.parse(obterParametroValor('ingredientes'));
 const preparo = JSON.parse(obterParametroValor('preparo'));
@@ -16,7 +19,10 @@ console.log('Ingredientes:', ingredientes);
 console.log('Preparo:', preparo);
 console.log('URL da imagem:', img);
 
+//Pegando o container '.container' do 'temp.html'
 const container = document.querySelector('.container')
+
+//Populando a página 'temp.html' com os devidos valores
 container.innerHTML = 
 `
     <div class="receita">
@@ -34,6 +40,8 @@ container.innerHTML =
         
     </div>
 `
+
+//Populando os ingredientes
 const ingred = document.querySelector('.ingredientes')
 for(let i = 0; i < ingredientes.length; i++){
     ingred.innerHTML+= 
@@ -41,6 +49,8 @@ for(let i = 0; i < ingredientes.length; i++){
         <li><input type="checkbox"> ${ingredientes[i]}</li>
     `
 }
+
+//Populando os Preparos
 const prep = document.querySelector('.preparo')
 for(let j = 0; j < preparo.length; j++){
     prep.innerHTML+= 

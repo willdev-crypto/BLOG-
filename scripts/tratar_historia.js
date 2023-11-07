@@ -14,7 +14,6 @@ const imagem = obterParametroValor('imagem');
 const texto = obterParametroValor('texto');
 const texto_completo = obterParametroValor('texto_completo');
 
-//Conferindo os valores no console
 console.log("Titulo: " + titulo);
 console.log("Imagem: " + imagem)
 console.log("Texto: " + texto)

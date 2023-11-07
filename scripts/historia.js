@@ -158,14 +158,13 @@ const historias = [
     `
     },
 ]
-//Container onde serão mostradas as histórias na página 'historia.html'
 const container_historias = document.querySelector('.container_historias')
 
-//Percorrendo o Array para pegar atribuir os valores
+//Percorrendo o Array para pegar e atribuir os valores
 for(let i = 0; i < historias.length; i++){
     let historia = historias[i];
 
-    //Passando como link para os href uma queryString como os devidos valores abaixo
+    //Passando para os hrefs uma queryString ( que guarda os valores da Array ).
     const url = `./historias/temp_historia.html?titulo=${encodeURIComponent(historia.titulo)}&imagem=${encodeURIComponent(historia.imagem)}&texto=${encodeURIComponent(historia.texto)}&texto_completo=${encodeURIComponent(historia.texto_completo)}`;
 
     //Populando as histórias na página historia.html
