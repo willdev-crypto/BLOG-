@@ -76,6 +76,7 @@
         padding-right: 100px;
         height: 100px;
     }
+    
 }
 
 @media(max-width: 650px){
@@ -96,7 +97,7 @@
         height: 80px;
     }
     .container_menu > .logo{
-        margin-left: 50px;
+        margin-left: 10px;
     }
     .container_menu > .mobile > button{
         display: flex;

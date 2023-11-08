@@ -10,7 +10,7 @@ body{
 /*Capa Inicial*/
 .container_capa > .capa{
     width: 100%;
-    height: 800px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     align-items: center;
