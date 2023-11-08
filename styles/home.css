@@ -129,6 +129,11 @@ body{
     .container_capa > .capa{
         height: 500px;
     }
+    /*Filtros*/
+    .container_filtro > .filtros_receitas{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media(max-width: 400px){
