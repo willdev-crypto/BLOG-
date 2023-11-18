@@ -1,0 +1,43 @@
+body{
+    background-color: #1d1d1d;
+}
+.historia{
+    margin: 40px 0;
+}
+.historia > h1{
+    color: #AB8C71;
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    margin: 0 20px ;
+}
+.historia > img{
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 300px;
+}
+.historia > h2{
+    color: #AB8C71;
+    display: block;
+    text-align: center;
+}
+.historia > p{
+    color: white;
+    margin: 10px 10%;
+    text-align: justify;
+}
+
+@media(max-width:500px){
+    .historia > h1{
+        font-size: 28px;
+    }
+}
+@media(max-width:350px){
+    .historia > h1{
+        font-size: 22px;
+    }
+    .historia > img{
+        width:200px;
+    }
+}

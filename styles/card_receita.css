@@ -1,0 +1,166 @@
+  /*Container das receitas*/
+  .container_central_receitas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 10px 30px 0;
+    gap: 25px;
+    max-width: 1500px;
+    font-size: 15px;
+}
+
+
+/*Receitas*/
+
+
+.receita_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    text-decoration: none;
+    border-radius: 15px;
+    width: 90%;
+    min-width: 90%;
+    box-shadow: 6px 6px 7px -1px rgba(0,0,0,0.38);
+    -webkit-box-shadow: 6px 6px 7px -1px rgba(0,0,0,0.38);
+    -moz-box-shadow: 6px 6px 7px -1px rgba(0,0,0,0.38);
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    transition: transform .5s;
+}
+.receita_container:hover{
+    transform: scale(1.1);
+}
+.receita_container > .receita_titulo{
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #1d1d1d;
+}
+.receita_container > .receita_texto{
+    text-align: center;
+    margin: 10px;  
+    padding: 5px;
+    border-radius: 10px; 
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #0000FF;
+}
+
+
+
+
+
+
+ 
+
+.receitas-animadas{
+    animation: ReceitasFade-In 1s ease forwards;
+    animation-play-state: running;
+}
+
+/* Responsividade*/
+/*
+@media screen and (min-width: 340px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        margin: 10px 10px 0;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 10px 30px 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 10px 80px 0;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin: 10px 80px 0;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        margin: 10px 100px 0;
+    }
+}
+*/
+
+/*Responsividade*/
+@media (max-width: 1100px){
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin: 10px 50px 0;
+    }
+}
+@media (max-width: 992px){
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 10px 50px 0;
+    }
+}
+@media (max-width: 790px){
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 10px 30px 0;
+    }
+}
+@media (max-width: 585px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        margin: 10px 30px 0;
+    }
+}
+@media (max-width: 420px) {
+    .container {
+        grid-template-columns: 1fr;
+        margin: 10px 80px 0;
+        
+    }
+}
+@media (max-width: 380px) {
+    .container {
+        grid-template-columns: 1fr;
+        margin: 10px 40px 0;
+        
+    }
+}
+@media (max-width: 280px) {
+    .container {
+        grid-template-columns: 1fr;
+        margin: 10px 20px 0;
+        
+    }
+}
+
+/*Animações*/
+@keyframes ReceitasFade-In {
+    from {
+        opacity: 0;
+        transform: translateX(-100);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

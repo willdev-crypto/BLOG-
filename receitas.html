@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores com História - Receitas</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/card_receita.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/receitas.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <script src="./scripts/mobile_menu.js" defer></script>
+
+    
+    <script src="./scripts/receitas.js" defer></script>
+    <script src="./scripts/filtro.js" defer></script>
+
+
+</head>
+
+<body>
+    <!--Menu-->
+    <header>
+        <div class="container_menu">
+            <div class="logo">
+                <img src="./img/LogoProjeto.png">
+            </div>
+            <div class="pc"><a href="./index.html">RECEITAS</a></div>
+            <div class="pc"><a href="./historia.html">HISTÓRIAS</a></div>
+            <div class="pc"><a href="./cadastro.html">CADASTRE-SE</a></div>
+            <div class="pc"><a href="./sobre.html">SOBRE</a></div>
+            <div class="mobile"><button onclick='mobileMenuShow()'><img class="icon"
+                        src="./img/mobile_menu.png"></button></div>
+        </div>
+    </header>
+
+    <!--Menu Mobile-->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="./index.html">RECEITAS</a></li>
+            <li><a href="./historia.html">HISTÓRIAS</a></li>
+            <li><a href="./cadastro.html">CADASTRE-SE</a></li>
+            <li><a href="./sobre.html">SOBRE</a></li>
+        </ul>
+    </div>
+
+    <!--Capa-->
+    <section class="container_capa">
+        <div class="capa" style="background-image: url('./img/bg_02.jpg');">
+            <h1 class="capa_titulo">Nossas Receitas</h1>
+            <p class="capa_conteudo">Explorando sabores pelo mundo: Receitas para transformar o seu mundo culinário!</p>
+        </div>
+    </section>
+
+    <section>
+
+        <!--Filtros-->
+        <br>
+        <br>
+        <div class="container_filtro">
+            <div class="filtro_button"><button onclick="showFiltros()"><img src="./img/filtro_icon.png" alt=""></button>
+                Filtros</div>
+            <div class="filtros_receitas">
+                <input type="checkbox" id="jantar" name="jantar" onclick="FiltrarReceita()" checked>
+                <label for="jantar">Jantar</label>
+                <input type="checkbox" id="almoco" name="almoco" onclick="FiltrarReceita()" checked>
+                <label for="almoco">Almoço</label>
+                <input type="checkbox" id="cafe" name="cafe" onclick="FiltrarReceita()" checked>
+                <label for="cafe">Café da Manhã</label>
+                <input type="checkbox" id="sobremesa" name="sobremesa" onclick="FiltrarReceita()" checked>
+                <label for="sobremesa">Sobremesa</label>
+                <input type="checkbox" id="petisco" name="petisco" onclick="FiltrarReceita()" checked>
+                <label for="petisco">Petisco</label>
+            </div>
+        </div>
+        <br>
+
+        <hr>
+        <br>
+        <br>
+        <div class="container_receitas">
+            <!--Adicione mais receitas usando o receitas.js-->
+            <!-- <div class="container_receita">
+                <div class="receita_imagem"><img src="./img/polenta2.jpg"></div>
+                <div class="receita_titulo">
+                    <h1><a href="./receitas/polenta.html">Polenta</a></h1>
+                    <p>
+                        A polenta tem suas raízes na Roma Antiga, onde os romanos cozinhavam um alimento semelhante feito de farinha de cevada chamado "puls." Este prato era uma importante fonte de nutrição para os soldados romanos.
+                    </p>
+                </div>
+                <div class="receita_bandeira" style="background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('https://static.todamateria.com.br/upload/ba/nd/bandeira-da-italia-og.jpg');"></div>
+            </div> -->
+
+
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <div class="container_sobre">
+        <h2>SOBRE NÓS:</h2>
+    </div>
+    <br>
+    <footer class="sobre">
+        <p>Somos uma equipe apaixonada por comida e história, unindo essas duas paixões para criar um espaço único onde os sabores contam histórias cativantes. Nosso blog é muito mais do que apenas receitas deliciosas... é um portal para explorar o mundo da culinária de maneira mais profunda e significativa.</p>
+        <ul class="redes-sociais">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="./newsletter.html">News Letter</a></li>
+        </ul>
+        <p>SABORES COM HISTÓRIA &copy; 2023</p>
+    </footer>
+</body>
+
+</html>

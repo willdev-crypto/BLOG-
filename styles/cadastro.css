@@ -1,0 +1,118 @@
+body{
+    background-color: #1D1D1D;
+}
+form{
+    margin-top: 40px;
+}
+.container_newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:400px;
+    height: auto;
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.container_newsletter > legend{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    color: #AB8C71;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.container_newsletter >label{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(100% - 40px);;
+    font-size: 20px;
+    margin-top: 10px;
+    color:white;
+}
+.container_newsletter > input{
+    height: 40px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    width: calc(100% - 40px);
+    margin-bottom: 15px;
+}
+.submit_button{
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: 100px;
+    padding: 0 20px;
+    border-radius: 20px;
+}
+
+.container_newsletter > input:focus{
+    background-color: #fff5eb;
+}
+
+.requisitos_senha{
+    width: calc(100% - 40px);
+}
+.requisitos_senha > .requisito {
+    list-style: none;
+    display: none;
+}
+
+.requisitos_confirmar_senha{
+    width: calc(100% - 40px);
+}
+.requisitos_confirmar_senha > .requisito_confirmar_senha {
+    list-style: none;
+    display: none;
+}
+
+
+.requisitos_usuario{
+    width: calc(100% - 40px);
+}
+
+.requisitos_usuario > .requisito_usuario{
+    list-style: none;
+    display: none;
+} 
+
+.requisitos_email{
+    width: calc(100% - 40px);
+}
+
+.requisitos_email > .requisito_email{
+    list-style: none;
+    display: none;
+} 
+
+ul > li{
+    font-family: monospace;
+}
+
+.container_receita {
+    max-width: 400px; 
+    margin: 0 auto; 
+    text-align: left; 
+}
+
+.submit_button {
+    margin: 0 auto; 
+}
+
+@media (max-width: 460px){
+    .container_newsletter{
+        width:300px;
+    }
+}
+@media (max-width: 330px){
+    .container_newsletter{
+        width:250px;
+    }
+}
+@media (max-width: 275px){
+    .container_newsletter{
+        width:200px;
+    }
+}

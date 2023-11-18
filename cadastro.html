@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores com História - Cadastro</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/cadastro.css">
+
+    <script src="./scripts/mobile_menu.js" defer></script>
+    <script src="./scripts/cadastro.js" defer></script>
+</head>
+<body>
+    <!--Menu-->
+    <header>
+        <div class="container_menu">
+            <div class="logo">
+                <img src="./img/LogoProjeto.png">
+            </div>
+            <div class="pc"><a href="./index.html">RECEITAS</a></div>
+            <div class="pc"><a href="./historia.html">HISTÓRIAS</a></div>
+            <div class="pc"><a href="./cadastro.html">CADASTRE-SE</a></div>
+            <div class="pc"><a href="./sobre.html">SOBRE</a></div>
+            <div class="mobile"><button onclick='mobileMenuShow()'><img class="icon"
+                        src="./img/mobile_menu.png"></button></div>
+        </div>
+    </header>
+
+    <!--Menu Mobile-->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="./index.html">RECEITAS</a></li>
+            <li><a href="./historia.html">HISTÓRIAS</a></li>
+            <li><a href="./cadastro.html">CADASTRE-SE</a></li>
+            <li><a href="./sobre.html">SOBRE</a></li>
+        </ul>
+    </div>
+
+    <!--Formulário-->
+    <form action="/submit" method="post">
+        <fieldset class="container_newsletter">
+            <legend>Cadastro</legend>
+            <br>
+            <label for="usuario">Usuário:</label>
+            <input title="Usuário" type="text" name="usuario" placeholder="Digite seu nome de Usuário" required onfocus="validarUsuario()" oninput="validarUsuario()" onblur="ocultarValidadoresUsuario()">
+            <!--vários atributos e eventos que manipulam o DOM (Documento Object Model) por meio de JavaScript. Vou explicar cada parte do código:
+
+            <input>: Este é um elemento HTML de entrada, usado para criar campos de formulário que permitem aos usuários inserir texto.
+            
+            title="Usuário": O atributo title fornece um texto de dica que é exibido quando o usuário paira o mouse sobre o campo de entrada. Neste caso, o texto da dica é "Usuário".
+            
+            type="text": O atributo type especifica o tipo de entrada, neste caso, é um campo de texto.
+            
+            name="usuario": O atributo name atribui um nome ao campo de entrada. Este nome é usado para identificar o campo quando os dados do formulário são enviados para o servidor.
+            
+            placeholder="Digite seu nome de Usuário": O atributo placeholder fornece um texto de orientação que é exibido no campo de entrada antes que o usuário insira qualquer texto. Neste caso, ele diz "Digite seu nome de Usuário".
+            
+            required: O atributo required torna o campo de entrada obrigatório, o que significa que o usuário deve preenchê-lo antes de enviar o formulário. Se o campo estiver vazio, o navegador não permitirá que o formulário seja enviado.
+            
+            onfocus="validarUsuario()": O evento onfocus ocorre quando o campo de entrada recebe o foco, ou seja, quando o usuário clica nele ou o seleciona usando a tecla Tab. Quando isso acontece, a função validarUsuario() é chamada. Isso pode ser usado, por exemplo, para realizar validações quando o campo é selecionado.
+            
+            oninput="validarUsuario()": O evento oninput ocorre sempre que o usuário digita algo no campo de entrada. A função validarUsuario() é chamada toda vez que o usuário digita algo. Isso permite que você realize validações em tempo real à medida que o usuário insere dados.
+            
+            onblur="ocultarValidadoresUsuario()": O evento onblur ocorre quando o campo de entrada perde o foco, ou seja, quando o usuário clica em outro lugar na página ou pressiona a tecla Tab para navegar para fora do campo. Quando isso acontece, a função ocultarValidadoresUsuario() é chamada. Isso pode ser usado para ocultar mensagens de validação ou executar ações quando o campo não está mais ativo. --> 
+
+            <ul class="requisitos_usuario">
+                <li class="requisito_usuario">- Usuário Válido</li>
+            </ul>
+
+            <label for="email">E-mail:</label>
+            <input title="Email" type="email" name="email" placeholder="Digite seu e-mail" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" onfocus="validarEmail()" oninput="validarEmail()" onblur="ocultarValidadoresEmail()">
+
+            <ul class="requisitos_email">
+                <li class="requisito_email">- Email Válido</li>
+            </ul>
+
+            <label for="senha">Senha:</label>
+            <input title="Senha" type="password" name="senha" placeholder="Digite sua senha." required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" onfocus="validarSenha()" oninput="validarSenha()" onblur="ocultarValidadoresSenha()">
+
+            <ul class="requisitos_senha">
+                <li class="requisito especial">- Caracter Especial</li>
+                <li class="requisito maiusculo">- Maiúsculo</li>
+                <li class="requisito minusculo">- Minúsculo</li>
+                <li class="requisito numero">- Número</li>
+                <li class="requisito num_digitos">- 8 digitos</li>
+            </ul>
+
+            <label for="confirmar_senha">Confirme sua senha:</label>
+            <input title="Confirmar senha" type="password" name="confirmar_senha" placeholder="Confirme sua senha" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" onfocus="confirmarSenha()" oninput="confirmarSenha()"
+            onblur="ocultarValidadoresConfirmarSenha()">
+
+            <ul class="requisitos_confirmar_senha">
+                <li class="requisito_confirmar_senha">- As senhas devem ser iguais</li>
+            </ul>
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        <button class="submit_button" onclick="enviarCadastro()">Confirmar</button>
+    </form>
+    <br>
+    <br>
+</body>
+</html>

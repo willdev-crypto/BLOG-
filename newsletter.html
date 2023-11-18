@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/newsletter.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <script src="./scripts/mobile_menu.js" defer></script>
+    <title>Sabores com História - Login</title>
+</head>
+
+<body>
+    <!--Menu-->
+    <header>
+        <div class="container_menu">
+            <div class="logo">
+                <img src="./img/LogoProjeto.png">
+            </div>
+            <div class="pc"><a href="./index.html">RECEITAS</a></div>
+            <div class="pc"><a href="./historia.html">HISTÓRIAS</a></div>
+            <div class="pc"><a href="./cadastro.html">CADASTRE-SE</a></div>
+            <div class="pc"><a href="./sobre.html">SOBRE</a></div>
+            <div class="mobile"><button onclick='mobileMenuShow()'><img class="icon"
+                        src="./img/mobile_menu.png"></button></div>
+        </div>
+    </header>
+
+    <!--Menu Mobile-->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="./index.html">RECEITAS</a></li>
+            <li><a href="./historia.html">HISTÓRIAS</a></li>
+            <li><a href="./cadastro.html">CADASTRE-SE</a></li>
+            <li><a href="./sobre.html">SOBRE</a></li>
+        </ul>
+    </div>
+    <br>
+
+    <form action="/submit" method="post">
+        <fieldset class="container_newsletter">
+            <legend>News Letter</legend>
+            <br>
+            <label for="nome">Nome:</label>
+            <input title="Nome" type="text" name="nome" placeholder="Digite seu nome" required><br><br>
+
+            <label for="email">E-mail:</label>
+            <input title="Email" type="email" name="email" placeholder="Digite seu e-mail" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"><br><br>
+
+            <label for="senha">Senha:</label>
+            <input title="Senha" type="password" name="senha" placeholder="Digite sua senha." required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$"><br><br>
+        </fieldset>
+        <br>
+        <input class="submit_button" type="submit" value="Confirmar">
+    </form>
+    <br>
+    <form action="/submit-receita" method="post">
+        <fieldset class="container_receita">
+            <legend>Adicionar Nova Receita</legend>
+            <br>
+    
+            <label for="nome_receita">Nome da Receita:</label>
+            <input type="text" id="nome_receita" name="nome_receita" required><br><br>
+    
+            <label for="ingredientes">Ingredientes:</label>
+            <textarea id="ingredientes" name="ingredientes" rows="4" required></textarea><br><br>
+    
+            <label for="instrucoes">Instruções:</label>
+            <textarea id="instrucoes" name="instrucoes" rows="4" required></textarea><br><br>
+        </fieldset>
+        <br>
+    
+        <input class="submit_button" type="submit" value="Adicionar">
+    </form>
+    
+</body>
+
+</html>
