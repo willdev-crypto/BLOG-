@@ -1,0 +1,64 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player de Música</title>
+</head>
+<body>
+
+<h1>Player de Música</h1>
+
+<div id="music-player">
+    <audio controls id="audio-player">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <ul id="playlist">
+        <!-- Lista de reprodução será gerada dinamicamente aqui -->
+    </ul>
+</div>
+
+<script>
+    async function fetchSongs() {
+        const musicFolderPath = './public/assets/music/INSTRUMENTALS';
+        const songs = [
+            'B4uGO.mp3',
+            'Heartburn - Instrumental.mp3',
+            // Adicione mais músicas conforme necessário
+        ];
+
+        return songs.map(file => {
+            return {
+                title: file.replace(/\.[^/.]+$/, ''),
+                artist: 'Desconhecido',
+                album: 'LIVE',
+                src: `${musicFolderPath}/${file}`,
+            };
+        });
+    }
+
+    async function loadSongs() {
+        const songs = await fetchSongs();
+        const playlistContainer = document.getElementById('playlist');
+        const audioPlayer = document.getElementById('audio-player');
+
+        songs.forEach((song, index) => {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `<b>${song.title}</b> - ${song.artist} (${song.album})`;
+            listItem.addEventListener('click', () => playSong(song.src, audioPlayer));
+            playlistContainer.appendChild(listItem);
+        });
+    }
+
+    function playSong(src, audioPlayer) {
+        audioPlayer.src = src;
+        audioPlayer.play();
+    }
+
+    loadSongs();
+</script>
+
+</body>
+</html>
