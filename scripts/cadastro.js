@@ -24,7 +24,7 @@ let cadastro = {
 }
 
 
-//Usuário
+//Usuário.
 function validarUsuario(){
     requisito_usuario.style.display = "block";
     if(usuarioInput.value == ""){
